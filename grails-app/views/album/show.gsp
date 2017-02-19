@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta name="layout" content="main" />
-        <g:set var="entityName" value="${message(code: 'albumController.label', default: 'AlbumController')}" />
+        <g:set var="entityName" value="${message(code: 'album.label', default: 'AlbumController')}" />
         <title><g:message code="default.show.label" args="[entityName]" /></title>
     </head>
     <body>
@@ -19,7 +19,7 @@
             <g:if test="${flash.message}">
             <div class="message" role="status">${flash.message}</div>
             </g:if>
-            <f:display bean="albumController" />
+            <f:display bean="album" />
             <g:form resource="${this.albumController}" method="DELETE">
                 <fieldset class="buttons">
                     <g:link class="edit" action="edit" resource="${this.albumController}"><g:message code="default.button.edit.label" default="Edit" /></g:link>

@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta name="layout" content="main" />
-        <g:set var="entityName" value="${message(code: 'albumController.label', default: 'AlbumController')}" />
+        <g:set var="entityName" value="${message(code: 'album.label', default: 'AlbumController')}" />
         <title><g:message code="default.edit.label" args="[entityName]" /></title>
     </head>
     <body>
@@ -29,7 +29,7 @@
             <g:form resource="${this.albumController}" method="PUT">
                 <g:hiddenField name="version" value="${this.albumController?.version}" />
                 <fieldset class="form">
-                    <f:all bean="albumController"/>
+                    <f:all bean="album"/>
                 </fieldset>
                 <fieldset class="buttons">
                     <input class="save" type="submit" value="${message(code: 'default.button.update.label', default: 'Update')}" />

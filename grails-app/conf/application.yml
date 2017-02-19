@@ -6,6 +6,11 @@ grails:
     spring:
         transactionManagement:
             proxies: false
+
+server:
+    contextPath: /records
+    port: 8081
+
 info:
     app:
         name: '@info.app.name@'

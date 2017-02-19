@@ -19,7 +19,9 @@
             <g:if test="${flash.message}">
                 <div class="message" role="status">${flash.message}</div>
             </g:if>
+
             <f:table collection="${artistList}" />
+            <g:render template="list" model="[artistList:artistList]" />
 
             <div class="pagination">
                 <g:paginate total="${artistCount ?: 0}" />
